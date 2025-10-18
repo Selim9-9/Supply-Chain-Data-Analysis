@@ -4,7 +4,7 @@
 
 ## 📋 Project Plan
 
-**[🌐 View Project Plan (GitHub Pages)](https://selim9-9.github.io/Supply-Chain-Data-Analysis/Data%20Warehouse/Docs/project-plan.html)** - Embedded Notion view
+**[🌐 View Project Plan (GitHub Pages)]([https://selim9-9.github.io/Supply-Chain-Data-Analysis/Data%20Warehouse/Docs/project-plan.html](https://v2-embednotion.com/Supply-Chain-Analysis-Project-Plan-eaf8285b7a0c4c9ab311f08658e064c3))** - Embedded Notion view
 
 Or open directly in Notion: [Link](https://garrulous-cake-5cd.notion.site/Supply-Chain-Analysis-Project-Plan-eaf8285b7a0c4c9ab311f08658e064c3)
 
