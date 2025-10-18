@@ -13,6 +13,10 @@ Dataset Source
 * Records: 180,000+ unique orders
 * Features: 50+ supply chain attributes
 
+## 📋 Project Plan
+View the interactive project plan:
+[Embedded Notion Plan](https://github.com/Selim9-9/Supply-Chain-Data-Analysis/blob/main/Data%20Warehouse/Docs/project-plan.html)
+
 ### 🚨 Dataset Not Included in Repository
 Due to GitHub's file size limitations, the dataset is NOT included in this repository. Please follow the setup instructions below to download and prepare the data.
 ### 🔧 Setup Instructions
