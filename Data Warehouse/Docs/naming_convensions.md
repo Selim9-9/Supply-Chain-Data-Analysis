@@ -91,3 +91,16 @@ This document outlines the naming conventions used for schemas, tables, views, c
   - Example: 
     - `load_bronze` → Stored procedure for loading data into the Bronze layer.
     - `load_silver` → Stored procedure for loading data into the Silver layer.
+   
+---
+
+### **Summary**
+
+This document provides a complete naming convention for the **DataCo Supply Chain Data Warehouse**. Following these conventions will ensure **consistency, traceability, and maintainability** of the data infrastructure.  
+
+**Version**: 1.0  
+**Last Updated**: October 2025  
+**Maintainer**: Saleem Khaled (Data Warehouse Engineer)  
+**Project Link**: [Supply-Chain-Data-Analysis](https://github.com/Selim9-9/Supply-Chain-Data-Analysis)
+
+---
