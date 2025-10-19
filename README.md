@@ -22,7 +22,7 @@
 
 **Click the preview below to view the complete interactive project plan:**
 
-[![Project Plan Preview](Data Warehouse/Docs/Notion-photo.png)](https://garrulous-cake-5cd.notion.site/Supply-Chain-Analysis-Project-Plan-eaf8285b7a0c4c9ab311f08658e064c3)
+[![Project Plan Preview](Data Warehouse/Docs/Notion_photo.png)](https://garrulous-cake-5cd.notion.site/Supply-Chain-Analysis-Project-Plan-eaf8285b7a0c4c9ab311f08658e064c3)
 
 > 👆 **Click to open the full project plan in Notion** | [Alternative text link →](https://garrulous-cake-5cd.notion.site/Supply-Chain-Analysis-Project-Plan-eaf8285b7a0c4c9ab311f08658e064c3)
 
