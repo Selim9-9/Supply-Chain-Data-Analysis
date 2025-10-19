@@ -15,6 +15,31 @@
  - Enhance Customer Insights - Segment customers and predict behaviors
  - Support Strategic Decisions - Provide forecasting and risk assessment
  - Enable Data-Driven Reporting - Create accessible insights for executives
+---
+
+## 📋 Key Business Requirements
+
+### Must-Have (M)
+- **Data Management**: Ensure data integrity, handle inconsistencies, create centralized data model
+- **Performance Analysis**: Measure delivery rates, analyze lead times, track KPIs across regions
+- **Reporting & Visualization**: Generate dashboards, create interactive reports with ROI recommendations
+
+### Should-Have (S)
+- **Financial Optimization**: Calculate cost-to-serve metrics, evaluate delay impacts, forecast revenue
+- **Customer Insights**: Segment customers by behavior, identify churn risks, analyze demand patterns
+
+### Could-Have (C)
+- **Risk & Forecasting**: Predict late delivery risks, develop demand forecasts (30-90 days)
+- **Integration & Scalability**: Design multi-user compatible outputs, ensure dataset scalability
+
+---
+
+## 📊 Success Metrics
+
+- **Delivery**: On-time rate >95%, lead time reduction
+- **Financial**: Cost per order <10% reduction, profit margin +5%
+- **Customer**: Retention >85%, improved satisfaction
+- **Operational**: Optimized inventory turnover, forecast accuracy >80%
 
 ---
 
@@ -50,11 +75,9 @@
 
 ---
 
-
-
 ## 👥 Team Structure
 
-**Project Timeline**: 10 weeks  
+**Project Timeline**: 8 weeks  
 **Team Size**: 4 members  
 **Organization**: Role-based division of responsibilities
 
@@ -69,79 +92,26 @@
 
 ---
 
-
-## 🏗️ Repository Structure
-
-```
-Supply-Chain-Data-Analysis/
-│
-├── Data Warehouse/              # 🔧 Data Engineering Work (Saleem)
-│   ├── ETL/                     # Extract, Transform, Load scripts
-│   ├── Models/                  # Dimensional models & schemas
-│   ├── Data_Quality/            # Validation & cleansing
-│   ├── SQL/                     # Database scripts
-│   └── Docs/                    # Technical documentation
-│
-├── Analysis/                    # 📈 Python Analysis Work (Team)
-│   ├── exploratory/             # EDA notebooks
-│   ├── modeling/                # Predictive models
-│   ├── visualizations/          # Charts and dashboards
-│   └── reports/                 # Analysis findings
-│
-├── data/                        # Raw data files (git-ignored)
-│   └── README.md                # Download instructions
-│
-├── images/                      # Project assets
-│   └── notion-project-plan-preview.png
-│
-├── requirements.txt             # Python dependencies
-├── .gitignore                   # Git ignore configuration
-└── README.md                    # This file
-```
-
----
-
-## 🏗️ Project Data Architecture
+## 📖 Project Data Architecture
 
 The data architecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layers:
-![Data Architecture](docs/data_architecture.png)
+![Data Architecture](./Data%20Warehouse/Docs/data_architecture.png)
 
 1. **Bronze Layer**: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
 2. **Silver Layer**: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
 3. **Gold Layer**: Houses business-ready data modeled into a star schema required for reporting and analytics.
 
 ---
-## 📖 Data Architecture Resposibilities
 
-This Role involves:
+## 🚀 Project Deliverables
 
-1. **Data Architecture**: Designing a Modern Data Warehouse Using Medallion Architecture **Bronze**, **Silver**, and **Gold** layers.
-2. **ETL Pipelines**: Extracting, transforming, and loading data from source systems into the warehouse.
-3. **Data Modeling**: Developing fact and dimension tables optimized for analytical queries.
-4. **Analytics & Reporting**: Creating SQL-based reports and dashboards for actionable insights.
----
-
-## 📈 Analysis Team Responsibilities
-
-The analysis team will use the prepared data warehouse to perform Python-based analysis:
-
-### Analyst #1: Exploratory Data Analysis
-- Data profiling and statistical analysis
-- Identify patterns and trends
-- Customer segmentation
-- Product performance analysis
-
-### Analyst #2: Predictive Modeling
-- Demand forecasting models
-- Delivery time predictions
-- Cost optimization algorithms
-- Risk assessment models
-
-### Analyst #3: Visualization & Reporting
-- Interactive dashboards
-- Business intelligence reports
-- Data storytelling
-- Presentation materials
+1. Data Infrastructure (cleaned dataset, database schema)
+2. Analysis Reports (performance, costs, risks)
+3. Financial Models (Excel-based scenarios)
+4. Visual Dashboards (Tableau workbooks)
+5. Predictive Insights (Python forecasts)
+6. Recommendations Deck (executive presentation)
+7. Documentation (technical specs, setup guides)
 
 ---
 
@@ -153,6 +123,8 @@ The analysis team will use the prepared data warehouse to perform Python-based a
 - SQL database (SQL Server recommended)
 - Git
 - Kaggle account (free)
+- Tableau Public
+- Microsoft Excel
 
 ### For Data Engineering Work
 
