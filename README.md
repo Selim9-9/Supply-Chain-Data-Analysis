@@ -1,155 +1,285 @@
-# Supply Chain Data Analysis 📊
+# Supply Chain Data Analysis - Team Project 📊
 
-## DataCo Supply Chain Analysis Project
+## DataCo Global Supply Chain Analysis
 
-## 📋 Project Plan
+## 🎯 Project Overview
 
-**[🌐 View Project Plan (GitHub Pages)](https://v2-embednotion.com/Supply-Chain-Analysis-Project-Plan-eaf8285b7a0c4c9ab311f08658e064c3)** - Embedded Notion view
+**Company**: DataCo Global - multinational e-commerce company  
+**Domain**: Supply chain operations, logistics, and distribution  
+**Objective**: Analyze supply chain data to identify bottlenecks, forecast demand, optimize costs, and recommend actionable strategies
 
-Or open directly in Notion: [Link](https://garrulous-cake-5cd.notion.site/Supply-Chain-Analysis-Project-Plan-eaf8285b7a0c4c9ab311f08658e064c3)
+### Business Goals
 
-> **Timeline**: 8-week project  
-> **Team Size**: 4 members  
-> **Goal**: Analyze dataset to identify bottlenecks, forecast demand, optimize costs, and recommend actionable strategies
+ - Improve Delivery Performance - Reduce late delivery rates by 20%
+ - Optimize Costs - Cut shipping and operational costs by 15%
+ - Enhance Customer Insights - Segment customers and predict behaviors
+ - Support Strategic Decisions - Provide forecasting and risk assessment
+ - Enable Data-Driven Reporting - Create accessible insights for executives
 
 ---
 
-### 📊 Dataset Information
+### 📋 Project Plan
 
-**DataCo Global** is a multinational e-commerce company managing a complex supply chain involving customer orders, product distribution, shipping, and global logistics.
+**Click the preview below to view the complete interactive project plan:**
+
+[![Project Plan Preview](Data Warehouse/Docs/Notion-photo.png)](https://garrulous-cake-5cd.notion.site/Supply-Chain-Analysis-Project-Plan-eaf8285b7a0c4c9ab311f08658e064c3?source=copy_link)
+
+> 👆 **Click to open the full project plan in Notion** | [Alternative text link →](https://garrulous-cake-5cd.notion.site/Supply-Chain-Analysis-Project-Plan-eaf8285b7a0c4c9ab311f08658e064c3)
+
+---
+
+## 📊 Dataset Information
+
+**Source**: [DataCo Smart Supply Chain for Big Data Analysis (Kaggle)](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis)
+
+### Dataset Characteristics
 
 - **Records**: 180,000+ unique orders (2015–2018)
-- **Features**: 50+ supply chain attributes
-- **Size**: ~180MB
-- **Includes**: Customer profiles, product details, order status, delivery metrics, and financials
+- **Attributes**: 50+ supply chain features
+- **Size**: ~180MB (too large for GitHub)
+- **Granularity**: Order-line level transactions
+- **Scope**: Customer data, product catalog, orders, shipping, financials
 
-#### Dataset Source
-- **Original Dataset**: [DataCo Smart Supply Chain for Big Data Analysis](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis)
-- **Platform**: Kaggle
+### Data Files
 
----
+- `DataCoSupplyChainDataset.csv` - Main transactional dataset
+- `DescriptionDataCoSupplyChain.csv` - Data dictionary and metadata
+- `tokenized_access_logs.csv` - System access logs
 
-### 🚨 Dataset Not Included in Repository
-
-Due to GitHub's file size limitations, the dataset is **NOT** included in this repository. Please follow the setup instructions below to download and prepare the data.
-
----
-
-### 🔧 Setup Instructions
-
-#### Step 1: Download the Dataset
-
-1. Go to [Kaggle DataCo Dataset Page](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis)
-2. Click "Download" (requires free Kaggle account)
-3. Extract the downloaded ZIP file
-4. You should have 3 CSV files:
-   - `DataCoSupplyChainDataset.csv`
-   - `DescriptionDataCoSupplyChain.csv`
-   - `tokenized_access_logs.csv`
-
-#### Step 2: Place Files in Repository
-
-```bash
-# Create data directory if it doesn't exist
-mkdir -p data
-
-# Move the extracted CSV files to the data directory
-mv DataCoSupplyChainDataset.csv data/
-mv DescriptionDataCoSupplyChain.csv data/
-mv tokenized_access_logs.csv data/
-```
-
-#### Step 3: Install Dependencies
-
-```bash
-# Create virtual environment (recommended)
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install required packages
-pip install -r requirements.txt
-```
+> ⚠️ **Important**: Data files are NOT included in this repository due to size limitations. Follow setup instructions below to download.
 
 ---
 
-### 📁 Project Structure
+
+
+## 👥 Team Structure
+
+**Project Timeline**: 10 weeks  
+**Team Size**: 4 members  
+**Organization**: Role-based division of responsibilities
+
+### Team Roles
+
+| Role | Responsibility | Team Member | Status |
+|------|---------------|-------------|---------|
+| **Data Warehouse Engineer** | Data management, ETL pipeline, dimensional modeling | Saleem Khaled | ✅ In Progress |
+| **Data Analyst #1** | Exploratory analysis, business insights (Python) | TBD | 🔜 Pending |
+| **Data Analyst #2** | Predictive modeling, forecasting (Python) | TBD | 🔜 Pending |
+| **Data Analyst #3** | Visualization, reporting, dashboards (Python) | TBD | 🔜 Pending |
+
+---
+
+
+## 🏗️ Repository Structure
 
 ```
 Supply-Chain-Data-Analysis/
-├── data/                          # Data files (not tracked by git)
-│   ├── DataCoSupplyChainDataset.csv
-│   ├── DescriptionDataCoSupplyChain.csv
-│   └── tokenized_access_logs.csv
-├── notebooks/                     # Jupyter notebooks for analysis
-├── scripts/                       # Python scripts
-├── visualizations/                # Charts and dashboards
-├── Data Warehouse/
-│   └── Docs/
-│       └── project-plan.html     # Embedded Notion plan
-├── requirements.txt              # Python dependencies
-└── README.md                     # This file
+│
+├── Data Warehouse/              # 🔧 Data Engineering Work (Saleem)
+│   ├── ETL/                     # Extract, Transform, Load scripts
+│   ├── Models/                  # Dimensional models & schemas
+│   ├── Data_Quality/            # Validation & cleansing
+│   ├── SQL/                     # Database scripts
+│   └── Docs/                    # Technical documentation
+│
+├── Analysis/                    # 📈 Python Analysis Work (Team)
+│   ├── exploratory/             # EDA notebooks
+│   ├── modeling/                # Predictive models
+│   ├── visualizations/          # Charts and dashboards
+│   └── reports/                 # Analysis findings
+│
+├── data/                        # Raw data files (git-ignored)
+│   └── README.md                # Download instructions
+│
+├── images/                      # Project assets
+│   └── notion-project-plan-preview.png
+│
+├── requirements.txt             # Python dependencies
+├── .gitignore                   # Git ignore configuration
+└── README.md                    # This file
 ```
 
 ---
 
-### 🎯 Project Objectives
+## 🏗️ Project Data Architecture
 
-- **Identify Bottlenecks**: Analyze delivery delays and supply chain inefficiencies
-- **Demand Forecasting**: Predict future order patterns and trends
-- **Cost Optimization**: Find opportunities to reduce shipping and operational costs
-- **Strategic Recommendations**: Provide actionable insights for supply chain improvement
+The data architecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layers:
+![Data Architecture](docs/data_architecture.png)
+
+1. **Bronze Layer**: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
+2. **Silver Layer**: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
+3. **Gold Layer**: Houses business-ready data modeled into a star schema required for reporting and analytics.
+
+---
+## 📖 Data Architecture Resposibilities
+
+This Role involves:
+
+1. **Data Architecture**: Designing a Modern Data Warehouse Using Medallion Architecture **Bronze**, **Silver**, and **Gold** layers.
+2. **ETL Pipelines**: Extracting, transforming, and loading data from source systems into the warehouse.
+3. **Data Modeling**: Developing fact and dimension tables optimized for analytical queries.
+4. **Analytics & Reporting**: Creating SQL-based reports and dashboards for actionable insights.
+---
+
+## 📈 Analysis Team Responsibilities
+
+The analysis team will use the prepared data warehouse to perform Python-based analysis:
+
+### Analyst #1: Exploratory Data Analysis
+- Data profiling and statistical analysis
+- Identify patterns and trends
+- Customer segmentation
+- Product performance analysis
+
+### Analyst #2: Predictive Modeling
+- Demand forecasting models
+- Delivery time predictions
+- Cost optimization algorithms
+- Risk assessment models
+
+### Analyst #3: Visualization & Reporting
+- Interactive dashboards
+- Business intelligence reports
+- Data storytelling
+- Presentation materials
 
 ---
 
-### 📈 Analysis Components
+## 🚀 Setup Instructions
 
-1. **Exploratory Data Analysis (EDA)**
-   - Data quality assessment
-   - Distribution analysis
-   - Correlation studies
+### Prerequisites
 
-2. **Delivery Performance Analysis**
-   - On-time delivery rates
-   - Shipping method efficiency
-   - Geographic performance patterns
+- Python 3.8+
+- SQL database (SQL Server recommended)
+- Git
+- Kaggle account (free)
 
-3. **Financial Analysis**
-   - Revenue trends
-   - Profit margins by product/region
-   - Cost structure analysis
+### For Data Engineering Work
 
-4. **Predictive Modeling**
-   - Demand forecasting
-   - Delivery time predictions
-   - Risk assessment
+#### Step 1: Clone Repository
+
+```bash
+git clone https://github.com/Selim9-9/Supply-Chain-Data-Analysis.git
+cd Supply-Chain-Data-Analysis
+```
+
+#### Step 2: Download Dataset
+
+1. Go to [Kaggle Dataset Page](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis)
+2. Click **Download** (sign in required)
+3. Extract ZIP file
+4. Place CSV files in `data/` folder:
+
+```bash
+mkdir -p data
+mv ~/Downloads/DataCoSupplyChainDataset.csv data/
+mv ~/Downloads/DescriptionDataCoSupplyChain.csv data/
+mv ~/Downloads/tokenized_access_logs.csv data/
+```
+
+#### Step 3: Set Up Environment
+
+```bash
+# Create virtual environment
+python -m venv venv
+
+# Activate environment
+# Windows:
+venv\Scripts\activate
+# macOS/Linux:
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+#### Step 4: Configure Database
+
+Create `.env` file in project root:
+
+```env
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=dataco_warehouse
+DB_USER=your_username
+DB_PASSWORD=your_password
+```
+
+#### Step 5: Initialize Data Warehouse
+
+```bash
+# Navigate to Data Warehouse folder
+cd "Data Warehouse"
+
+# Run setup scripts
+python ETL/initialize_warehouse.py
+```
+
+### For Analysis Team
+
+Once the data warehouse is ready:
+
+1. Connect to the prepared data warehouse
+2. Access dimension and fact tables
+3. Use provided SQL views for analysis
+4. Refer to data dictionary in `Data Warehouse/Docs/`
 
 ---
 
-### 🔗 Resources
+## 📚 Data Warehouse Documentation
 
-- **[📋 Full Project Plan (Notion)](https://garrulous-cake-5cd.notion.site/Supply-Chain-Analysis-Project-Plan-eaf8285b7a0c4c9ab311f08658e064c3)** - Detailed timeline and milestones
-- **[🌐 Project Website](https://selim9-9.github.io/Supply-Chain-Data-Analysis/)** - View embedded project plan
-- **[💾 Dataset (Kaggle)](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis)** - Download original data
+Detailed technical documentation is available in the `Data Warehouse/Docs/` folder:
+
+- **Data Dictionary**: Complete field definitions and descriptions
+- **ETL Documentation**: Process flows and transformation logic
+- **Data Model**: ER diagrams and schema design
+- **SQL Guide**: Query examples and best practices
 
 ---
 
-### 👤 Author
+
+
+## 👤 Project Lead - Data Engineering
 
 **Saleem Khaled**  
-Freelance Data Analyst | Excel Specialist
+Data Warehouse Engineer | Data Management Specialist
 
 - 🔗 [LinkedIn](https://www.linkedin.com/in/saleem-khaled-a502b3253/)
 - 💻 [GitHub](https://github.com/Selim9-9)
-- 📊 [Freelancer Profile](https://www.freelancer.com)
+- 📊 Freelancer Platform: Freelancer.com
+
+**Specialization**: Excel dashboards, data warehousing, ETL pipeline development, database management
 
 ---
 
-### 📝 License
+## 🤝 Collaboration Guidelines
 
-This project is available for educational and portfolio purposes.
+### For Team Members
+
+- **Data Requests**: Contact Saleem for data warehouse access
+- **New Data Needs**: Submit requests through GitHub Issues
+- **Bug Reports**: Use issue tracker for data quality concerns
+- **Documentation**: Check `Data Warehouse/Docs/` before asking questions
+
+### Branching Strategy
+
+- `main` - Production-ready code
+- `dev-warehouse` - Data engineering development (Saleem)
+- `dev-analysis` - Analysis team development
+- Feature branches: `feature/your-feature-name`
 
 ---
 
-### 🤝 Contributing
+## 📝 License
 
-This is a portfolio project, but feedback and suggestions are welcome! Feel free to open an issue or submit a pull request.
+This project is for educational and portfolio purposes.
+
+---
+
+## 📧 Contact
+
+For questions about the data warehouse or data access:
+- Open a GitHub Issue
+- Contact Saleem Khaled via LinkedIn
+
+For general project inquiries, refer to the [Notion Project Plan](https://garrulous-cake-5cd.notion.site/Supply-Chain-Analysis-Project-Plan-eaf8285b7a0c4c9ab311f08658e064c3).
