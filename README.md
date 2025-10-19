@@ -52,18 +52,17 @@
 > 👆 **Click to open the full project plan in Notion** | [Alternative text link →](https://garrulous-cake-5cd.notion.site/Supply-Chain-Analysis-Project-Plan-eaf8285b7a0c4c9ab311f08658e064c3)
 
 ---
+### 📊 Dataset Information
+- DataCo Global is a multinational e-commerce company managing a complex supply chain involving customer orders, product distribution, shipping, and global logistics.
+- The dataset provides comprehensive data on 180,000+ orders from 2015–2018, including customer profiles, product details, order status, delivery metrics, and financials.
+This project analyzes the DataCo Smart Supply Chain Dataset to provide insights into global supply chain operations, delivery performance, and cost optimization opportunities.
+Dataset Source
 
-## 📊 Dataset Information
-
-**Source**: [DataCo Smart Supply Chain for Big Data Analysis (Kaggle)](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis)
-
-### Dataset Characteristics
-
-- **Records**: 180,000+ unique orders (2015–2018)
-- **Attributes**: 50+ supply chain features
-- **Size**: ~180MB (too large for GitHub)
-- **Granularity**: Order-line level transactions
-- **Scope**: Customer data, product catalog, orders, shipping, financials
+* Original Dataset: [DataCo Smart Supply Chain for Big Data Analysis](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis)
+* Platform: Kaggle
+* Size: ~180MB (too large for GitHub storage)
+* Records: 180,000+ unique orders
+* Features: 50+ supply chain attributes
 
 ### Data Files
 
