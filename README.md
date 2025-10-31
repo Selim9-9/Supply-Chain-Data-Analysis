@@ -3,18 +3,17 @@
 ## DataCo Global Supply Chain Analysis
 
 ## Dataset Overview
-Based on the research, you're working with:
-180,000+ order records from 2015-2018
-50+ features covering customer orders, products, shipping, delivery, and financials
-30,000+ unique customers and 10,000+ products
-Key data includes: Order ID, customer details, product categories, shipping modes, delivery status, costs, and late delivery risk indicators
+- 180,000+ order records from 2015-2018.
+- 50+ features covering customer orders, products, shipping, delivery, and financials.
+- 30,000+ unique customers and 10,000+ products.
+- Key data includes: Order ID, customer details, product categories, shipping modes, delivery status, costs, and late delivery risk indicators.
 
 ## Business Goals 
-Primary Goals - 8 Week Timeline
-Delivery Performance Analysis: Create actionable insights to improve the current 41% on-time delivery rate toward industry benchmark of 95%
-Cost Optimization: Identify 10-15% cost reduction opportunities through data-driven shipping and operational analysis
-Customer Segmentation: Develop practical customer segments for retention strategies
-Interactive Dashboards: Build executive and operational dashboards for ongoing monitoring
+#### Primary Goals - 8 Week Timeline
+- Delivery Performance Analysis: Create actionable insights to improve the current 41% on-time delivery rate toward industry benchmark of 95%
+- Cost Optimization: Identify 10-15% cost reduction opportunities through data-driven shipping and operational analysis
+- Customer Segmentation: Develop practical customer segments for retention strategies
+- Interactive Dashboards: Build executive and operational dashboards for ongoing monitoring
 
 
 ### 📋 Project Plan
@@ -49,7 +48,7 @@ Interactive Dashboards: Build executive and operational dashboards for ongoing m
 |------|---------------|-------------|---------|
 | **Data Warehouse Engineer** | Data management, ETL pipeline, dimensional modeling | Saleem Khaled | ✅ In Progress |
 | **Business Analyst** |Excel-based financial analysis | Mohamed Mostafa | ✅ In Progress |
-| **Data Warehouse Engineer** | Python-based analytics, modeling, and automation | Mohammed Sameer | ✅ In Progress |
+| **Data Scientist** | Python-based analytics, modeling, and automation | Mohammed Sameer | ✅ In Progress |
 | **Business Intelligence Analyst** |  dashboard design, development, and reporting | Abdelrahman Mohamed | ✅ In Progress |
 
 
