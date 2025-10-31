@@ -1,8 +1,8 @@
 # Supply Chain Data Analysis - Team Project 📊
 
-## DataCo Global Supply Chain Analysis
-
-## Dataset Overview
+### DataCo Global Supply Chain Analysis
+DataCo Global is a multinational e-commerce company managing a complex supply chain involving customer orders, product distribution, shipping, and global logistics.
+### Dataset Overview
 - 180,000+ order records from 2015-2018.
 - 50+ features covering customer orders, products, shipping, delivery, and financials.
 - 30,000+ unique customers and 10,000+ products.
