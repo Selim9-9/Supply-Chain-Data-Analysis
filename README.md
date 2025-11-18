@@ -109,7 +109,7 @@ The project uses a Medallion Architecture implemented fully inside **SQL Server*
 
 ---
 
-# 📚 Documentation (in `/Data Warehouse/Docs`)
+# 📚 Documentation (in `/Docs`)
 
 - Data Dictionary  
 - Bronze / Silver / Gold ETL Logic  
