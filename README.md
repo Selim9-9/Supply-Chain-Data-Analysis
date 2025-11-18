@@ -17,7 +17,7 @@ The outcome of this project is a fully modeled warehouse plus interactive BI das
 
 ---
 
-## Business Goals (Aligned With the Proposal)
+## Business Goals
 
 ### 1. Build a Full SQL Server Data Warehouse  
 - **Saleem:** Bronze layer ingestion & initialization  
