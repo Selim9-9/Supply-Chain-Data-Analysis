@@ -75,7 +75,7 @@ The outcome of this project is a fully modeled warehouse plus interactive BI das
 
 The project uses a Medallion Architecture implemented fully inside **SQL Server**.
 
-![Data Architecture](./Docs/data_architecture.png)
+![Data Architecture](./Docs/Supply_Chain_Data_Warehouse.drawio.png)
 
 ### **1. Bronze Layer – Raw Data**
 - Owner: **Saleem**  
