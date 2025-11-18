@@ -14,6 +14,7 @@ The outcome of this project is a fully modeled warehouse plus interactive BI das
 - 30k+ unique customers  
 - 10k+ products  
 - Includes: Order Date, Shipping Date, Delivery Risk, Region, Department, Profit, Shipping Cost, Customer Attributes
+- ![Dataset Link](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis/data)
 
 ---
 
