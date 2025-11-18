@@ -46,7 +46,7 @@ The outcome of this project is a fully modeled warehouse plus interactive BI das
 # 📅 Project Plan (8 Weeks)
 
 **Click below to view the interactive project plan:**  
-[![Project Plan](./Data%20Warehouse/Docs/Notion_photo.png)](https://garrulous-cake-5cd.notion.site/Supply-Chain-Analysis-Project-Plan-eaf8285b7a0c4c9ab311f08658e064c3)
+[![Project Plan](./Docs/Notion_photo.png)](https://garrulous-cake-5cd.notion.site/Supply-Chain-Analysis-Project-Plan-eaf8285b7a0c4c9ab311f08658e064c3)
 
 ---
 
@@ -75,7 +75,7 @@ The outcome of this project is a fully modeled warehouse plus interactive BI das
 
 The project uses a Medallion Architecture implemented fully inside **SQL Server**.
 
-![Data Architecture](./Data%20Warehouse/Docs/data_architecture.png)
+![Data Architecture](./Docs/data_architecture.png)
 
 ### **1. Bronze Layer – Raw Data**
 - Owner: **Saleem**  
