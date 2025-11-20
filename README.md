@@ -1,14 +1,15 @@
 # DataCo Supply Chain Analytics – SQL Server Data Warehouse & Power BI
 
-## Overview  
+## 📦 Overview  
 This project focuses on building a complete **SQL Server Data Warehouse (Bronze → Silver → Gold)** and developing **Power BI dashboards** to analyze and improve DataCo Global’s supply chain performance.  
 The dataset contains 180,000+ orders (2015–2018) including delivery status, shipping cost, customer location, product categories, and profit metrics.
 
 The outcome of this project is a fully modeled warehouse plus interactive BI dashboards that support strategic supply chain decisions.
 
----
 
-## Dataset Overview  
+The DataCo Global dataset represents a simulated end‑to‑end e‑commerce supply chain environment designed for analytics, data warehousing, and business intelligence experimentation. It captures real‑world operational processes across procurement, order handling, shipping, delivery performance, customer behavior, regional logistics, and product categorization. The dataset contains structured transactional data generated from the company’s provisioning, production, sales, and distribution workflows, making it ideal for understanding how orders move through a complete supply chain lifecycle.
+Three major product lines are included—Clothing, Sporting Goods, and Electronics—allowing analysis of category‑specific performance and profitability.
+
 - 180k+ order records (2015–2018)  
 - 50+ features (orders, customers, products, delivery, costs)  
 - 30k+ unique customers  
