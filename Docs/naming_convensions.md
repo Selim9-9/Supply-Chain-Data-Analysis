@@ -65,10 +65,10 @@ This document outlines the naming conventions used for schemas, tables, views, c
 ### **Surrogate Keys**  
 **Definition**: Surrogate keys are artificial, system-generated unique identifiers (typically integers) used in dimension tables to provide stable references for joins and historical tracking. They are essential in our data warehouse for handling slowly changing dimensions (SCD) in supply chain entities like customers or products, ensuring data integrity without relying on volatile natural keys from the Kaggle source.
 
-- All primary keys in dimension tables must use the suffix `_key`.
-- **`<table_name>_key`**  
+- All primary keys in dimension tables must use the suffix `_id`.
+- **`<table_name>_id`**  
   - `<table_name>`: Refers to the name of the table or entity the key belongs to.  
-  - `_key`: A suffix indicating that this column is a surrogate key.  
+  - `_id`: A suffix indicating that this column is a surrogate key.  
   - Example: `customer_key` → Surrogate key in the `dim_customers` table.
 
 ### **Technical Columns**
