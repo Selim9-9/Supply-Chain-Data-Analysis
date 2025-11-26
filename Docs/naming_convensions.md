@@ -69,7 +69,7 @@ This document outlines the naming conventions used for schemas, tables, views, c
 - **`<table_name>_id`**  
   - `<table_name>`: Refers to the name of the table or entity the key belongs to.  
   - `_id`: A suffix indicating that this column is a surrogate key.  
-  - Example: `customer_key` → Surrogate key in the `dim_customers` table.
+  - Example: `customer_id` → Surrogate key in the `dim_customers` table.
 
 ### **Technical Columns**
 **Definition**: Technical columns are metadata fields added by the data warehouse system to track ETL processes, audit data lineage, and support quality assurance. In our project, they help document transformations from Kaggle raw data through Bronze-Silver-Gold layers, including load timestamps and validation flags for supply chain data integrity.
