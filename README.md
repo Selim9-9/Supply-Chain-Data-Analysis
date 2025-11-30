@@ -23,25 +23,27 @@ Three major product lines are included—Clothing, Sporting Goods, and Electroni
 
 ### 1. Build a Full SQL Server Data Warehouse  
 - **Saleem:** Bronze layer ingestion & initialization  
-- **Abdelrahman:** Silver & Gold layers with star schema and business rules  
+- **Abdelrahman:** Silver layer transformations (cleaning, standardization, deduplication)  
+- **Mostafa:** Gold layer development (star schema modeling, fact/dimension tables)  
 
 ### 2. Improve Delivery Performance  
 - **Mostafa:** Delivery KPIs, DAX measures  
 - **Sameer:** Interactive delivery dashboards  
 
 ### 3. Optimize Shipping & Operational Costs  
-- **Abdelrahman:** Cost fact tables in Gold layer  
-- **Mostafa & Sameer:** Cost KPIs and dashboards  
+- **Mostafa:** Cost fact tables in Gold layer and cost-efficiency KPIs  
+- **Sameer:** Cost comparison dashboards  
 
 ### 4. Enhance Product, Regional, and Customer Insights  
 - **Saleem:** Ensure raw data integrity in Bronze  
-- **Abdelrahman:** Build cleaned dimensions in Silver/Gold  
-- **Power BI team:** Drill‑downs for region, product, customers  
+- **Abdelrahman:** Build cleaned dimensions in Silver layer  
+- **Mostafa:** Finalize dimensions and aggregated fact tables in Gold layer  
+- **Sameer & Mostafa:** Drill‑down analytics for region, product, customers  
 
 ### 5. Executive BI Reporting  
-- Final Power BI dashboards  
-- Insights for leadership  
-- Reliable metrics from Gold layer
+- **Sameer:** Final dashboard development  
+- **Mostafa:** Business insights narrative and metric validation from Gold layer  
+- **Saleem & Abdelrahman:** Data validation from Bronze/Silver layers  
 
 ---
 
@@ -62,14 +64,14 @@ Three major product lines are included—Clothing, Sporting Goods, and Electroni
 
 ---
 
-# 👥 Team Structure
+# 👥 Team Responsibilities
 
-| Role | Responsibility | Team Member |
-|------|----------------|-------------|
-| **SQL Data Engineer (Bronze Layer)** | Data ingestion, raw layer setup, initialization | **Saleem Khaled** |
-| **SQL Data Warehouse Developer (Silver & Gold)** | Cleansing, business rules, star schema | **Abdelrahman Mohamed** |
-| **Power BI Analyst** | KPI definition, DAX formulas, business insights | **Mohamed Mostafa** |
-| **Power BI Developer** | Dashboard design, modeling, interactions | **Mohamed Sameer** |
+| Responsibility | Team Member |
+|----------------|-------------|
+| Data ingestion, raw layer setup, initialization (Bronze Layer) | **Saleem Khaled** |
+| Data cleaning, transformations, business rules application (Silver Layer) | **Abdelrahman Mohamed** |
+| Gold layer modeling, KPI development, DAX measures, business insights | **Mohamed Mostafa** |
+| Power BI dashboard design, visual interactions, performance optimization | **Mohamed Sameer** |
 
 ---
 
@@ -92,7 +94,7 @@ The project uses a Medallion Architecture implemented fully inside **SQL Server*
 - Normalized relationships  
 
 ### **3. Gold Layer – Business-Ready Star Schema**
-- Owner: **Abdelrahman**  
+- Owner: **Mohammed Mostafa**  
 - Fact tables for Orders, Shipping, Delivery, Financials  
 - Dimension tables for Customer, Region, Product, Department, Date  
 - Final tables consumed by Power BI  
