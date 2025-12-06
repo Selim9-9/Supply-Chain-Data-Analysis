@@ -101,7 +101,7 @@ The project uses a Medallion Architecture implemented fully inside **SQL Server*
 
 ---
 # Data Model
-![Data Model](./Docs/data_model.png)
+![Data Model](Docs/data_model.PNG)
 ---
 
 # 🚀 Final Deliverables
