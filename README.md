@@ -100,6 +100,9 @@ The project uses a Medallion Architecture implemented fully inside **SQL Server*
 - Final tables consumed by Power BI  
 
 ---
+# Data Model
+![Data Model](./Docs/data_model.png)
+---
 
 # 🚀 Final Deliverables
 
