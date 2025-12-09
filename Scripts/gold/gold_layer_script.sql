@@ -109,10 +109,10 @@ BEGIN
         CAST(date_value AS DATE),
         YEAR(date_value),
         MONTH(date_value),
-        DATENAME(MONTH, date_value),
+        LEFT(DATENAME(MONTH, date_value),3),
         DATEPART(QUARTER, date_value),
         FORMAT(date_value, 'yyyy-MMM'),
-        DATENAME(WEEKDAY, date_value)
+        LEFT(DATENAME(WEEKDAY, date_value),3)
     FROM AllDates
     WHERE date_value IS NOT NULL;
 
