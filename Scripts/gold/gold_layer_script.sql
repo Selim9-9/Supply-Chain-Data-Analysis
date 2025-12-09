@@ -72,8 +72,8 @@ BEGIN
         order_state NVARCHAR(100),
         order_city NVARCHAR(100),
         market NVARCHAR(50),
-        latitude DECIMAL(9,6),
-        longitude DECIMAL(9,6)
+        latitude DECIMAL(10,8),
+        longitude DECIMAL(11,8)
     );
 
     INSERT INTO gold.dim_geography (order_country, order_region, order_state, order_city, market, latitude, longitude)
@@ -218,3 +218,4 @@ GO
 
 -- Execute
 --EXEC gold.load_data_warehouse;
+
