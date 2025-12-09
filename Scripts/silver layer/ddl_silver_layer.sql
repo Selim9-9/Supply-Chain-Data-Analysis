@@ -55,7 +55,7 @@ CREATE TABLE silver.kaggle_supply_chain_cleaned
     actual_shipping_days INT,               -- Original: [Days for shipping (real)]
     scheduled_shipping_days INT,            -- Original: [Days for shipment (scheduled)]
     delivery_status NVARCHAR(50),           -- Original: [Delivery Status]
-    late_delivery_risk INT,                 -- Original: [Late_delivery_risk]
+    late_delivery_risk NVARCHAR(50),                 -- Original: [Late_delivery_risk]
     shipping_mode NVARCHAR(100),            -- Original: [Shipping Mode]
 
     -- --------------------------------------------------------------------------
