@@ -1,4 +1,4 @@
-﻿/*
+/*
 ===============================================================================
 Procedure: silver.final_clean_and_enrich_3
 Purpose: Performs all final cleaning, standardization, and enrichment.
@@ -55,7 +55,10 @@ BEGIN
                              WHEN customer_state IN ('91732', '95758') THEN 'CA'  -- Map zips to state (based on patterns)
                              WHEN LEN(customer_state) <> 2 THEN NULL
 							 ELSE customer_state
-                         END;
+                         END,
+		-- Standarize late_delivery_risk column:
+		late_delivery_risk = CASE WHEN late_delivery_risk = 0 THEN 'Was_on_time' ELSE 'Was_late' END;
+
     PRINT ' -> ' + CAST(@@ROWCOUNT AS VARCHAR) + ' rows updated by standardization rules.';
     --------------------------------------------------------------------------
     -- Action 2: Populate the DWH Derived Column
