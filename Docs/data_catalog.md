@@ -112,6 +112,6 @@ Source: `silver.kaggle_supply_chain_cleaned`
 | `order_item_discount`       | `DECIMAL(18,2)`  |     | Discount amount applied to this order item.                                                                     | `silver.order_item_discount`                                             |
 | `actual_shipping_days`      | `INT`            |     | Actual number of days between order and delivery (or shipping), depending on original dataset definition.      | `silver.actual_shipping_days`                                            |
 | `scheduled_shipping_days`   | `INT`            |     | Planned/scheduled number of shipping days.                                                                      | `silver.scheduled_shipping_days`                                         |
-| `dwh_delivery_variance_days`| `INT`            |     | Difference between actual and scheduled shipping days; positive = late, negative = early, 0 = on time.         | `silver.dwh_delivery_variance_days`                                      |
+| `dwh_delivery_variance_days`| `INT`            |     | Calculated: actual_shipping_days - scheduled_shipping_days; positive = late, negative = early, 0 = on time.         | `silver.dwh_delivery_variance_days`                                      |
 
 ---
