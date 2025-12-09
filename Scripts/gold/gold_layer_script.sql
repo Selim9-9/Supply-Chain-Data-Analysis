@@ -1,18 +1,17 @@
 /*
-===============================================================================
-Procedure: gold.load_data_warehouse
-Purpose:   Builds a full star schema from the Silver data. It creates four
-           dimension tables and one central fact table, then adds the primary
-           and foreign key relationships.
-
-Data Model:
-    - Dimensions: dim_customer, dim_product, dim_shipping_location, dim_date
-    - Fact Table: fact_supply_chain
-
-Usage Example: EXEC gold.load_data_warehouse
-===============================================================================
+===========================================================================
+Stored Procedure: gold.load_data_warehouse
+purpose:
+    - create the tables of gold layer:
+		gold.fast_sales
+		gold.dim_customer
+		gold.dim_product
+		gold.dim_geo
+		gold.dim_date
+	- Performs ELT to populate the tables of the Gold Layer.
+  
+===========================================================================
 */
-
 CREATE OR ALTER PROCEDURE gold.load_data_warehouse
 AS
 BEGIN
@@ -73,8 +72,8 @@ BEGIN
         order_state NVARCHAR(100),
         order_city NVARCHAR(100),
         market NVARCHAR(50),
-        latitude DECIMAL(10,8),
-        longitude DECIMAL(11,8)
+        latitude DECIMAL(9,6),
+        longitude DECIMAL(9,6)
     );
 
     INSERT INTO gold.dim_geography (order_country, order_region, order_state, order_city, market, latitude, longitude)
@@ -110,10 +109,10 @@ BEGIN
         CAST(date_value AS DATE),
         YEAR(date_value),
         MONTH(date_value),
-        LEFT(DATENAME(MONTH, date_value), 3),
+        DATENAME(MONTH, date_value),
         DATEPART(QUARTER, date_value),
         FORMAT(date_value, 'yyyy-MMM'),
-        LEFT(DATENAME(WEEKDAY, date_value), 3)
+        DATENAME(WEEKDAY, date_value)
     FROM AllDates
     WHERE date_value IS NOT NULL;
 
@@ -143,7 +142,7 @@ BEGIN
         delivery_status NVARCHAR(50),
         order_status NVARCHAR(50),
         payment_type NVARCHAR(50),
-        late_delivery_risk INT,
+        late_delivery_risk NVARCHAR(50),
 
         -- Metrics
         sales_per_item DECIMAL(18,2),
@@ -198,19 +197,20 @@ BEGIN
         AND s.customer_city = c.customer_city 
         AND s.customer_state = c.customer_state
 
-
+    -- FIX 2: Join on ID + Attributes to find the specific Product version
     LEFT JOIN gold.dim_product p 
         ON s.product_card_id = p.product_card_id
         AND s.product_name = p.product_name
         AND s.product_price = p.product_price 
         -- (Assuming price change creates a new product row in your logic)
 
+    -- FIX 3: Geography is already joining on all columns, so it is likely safe
     LEFT JOIN gold.dim_geography g 
-        ON  ISNULL(s.order_city,'N/A') = ISNULL(g.order_city, 'N/A')
-        AND ISNULL(s.order_state,'N/A') = ISNULL(g.order_state, 'N/A') 
-        AND ISNULL(s.order_country, 'N/A') = ISNULL(g.order_country, 'N/A')
-		AND ISNULL(s.latitude,	0)  = ISNULL(g.latitude,     0)
-		AND ISNULL(s.longitude,	0)  = ISNULL(g.longitude,    0)
+        ON s.order_city = g.order_city 
+        AND s.order_state = g.order_state 
+        AND s.order_country = g.order_country
+		AND s.latitude = g.latitude
+		AND s.longitude = g.longitude
 
     PRINT '--- Gold Layer Load Complete ---';
 END
