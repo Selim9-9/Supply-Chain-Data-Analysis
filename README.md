@@ -21,30 +21,12 @@ Three major product lines are included—Clothing, Sporting Goods, and Electroni
 
 ## Business Goals
 
-### 1. Build a Full SQL Server Data Warehouse  
-- **Saleem:** Bronze layer ingestion & initialization  
-- **Abdelrahman:** Silver layer transformations (cleaning, standardization, deduplication)  
-- **Mostafa:** Gold layer development (star schema modeling, fact/dimension tables)  
+The project aims to deliver a data warehouse and Power BI dashboards that enable data‑driven decision‑making for DataCo Global’s supply chain. Key objectives include:
 
-### 2. Improve Delivery Performance  
-- **Mostafa:** Delivery KPIs, DAX measures  
-- **Sameer:** Interactive delivery dashboards  
-
-### 3. Optimize Shipping & Operational Costs  
-- **Mostafa:** Cost fact tables in Gold layer and cost-efficiency KPIs  
-- **Sameer:** Cost comparison dashboards  
-
-### 4. Enhance Product, Regional, and Customer Insights  
-- **Saleem:** Ensure raw data integrity in Bronze  
-- **Abdelrahman:** Build cleaned dimensions in Silver layer  
-- **Mostafa:** Finalize dimensions and aggregated fact tables in Gold layer  
-- **Sameer & Mostafa:** Drill‑down analytics for region, product, customers  
-
-### 5. Executive BI Reporting  
-- **Sameer:** Final dashboard development  
-- **Mostafa:** Business insights narrative and metric validation from Gold layer  
-- **Saleem & Abdelrahman:** Data validation from Bronze/Silver layers  
-
+1. **Build a full SQL Server data warehouse** (Bronze → Silver → Gold) to centralize and structure supply chain data for reliable analytics.
+2. **Develop interactive Power BI dashboards** that visualize key performance indicators (KPIs) and trends across delivery, costs, products, regions, and customers.
+3. **Identify supply chain problems** (e.g., late deliveries, cost inefficiencies, regional bottlenecks) through data exploration and analysis.
+4. **Propose data‑driven solutions** to improve delivery performance, optimize shipping costs, and enhance product, regional, and customer insights.
 ---
 
 # 📅 Project Plan (8 Weeks)
